@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Genre Song</title>
+    <link rel="stylesheet" href="../../css/utility.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" /> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,100,1,200"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+
+    <link rel="stylesheet" href="./genre-song.css" />
+  </head>
+  <body>
+    <div class="parent-cont">
+      <aside>
+        <h1>AudioX</h1>
+        <div class="top-side-item">
+          <ul>
+            <li id="home">
+              <a href="#" class="reset-anchor">
+                <span
+                  class="material-symbols-outlined"
+                  style="font-size: 25px; color: white"
+                >
+                  house
+                </span>
+                <span class="link-text"> Home </span>
+              </a>
+            </li>
+            <li id="search">
+              <a href="../search/search.html?data=sandy" class="reset-anchor">
+                <span
+                  class="material-symbols-outlined"
+                  style="font-size: 25px; color: white"
+                >
+                  search
+                </span>
+                <span class="link-text"> search </span>
+              </a>
+            </li>
+            <li>
+              <a href="/" class="reset-anchor">
+                <span
+                  class="material-symbols-outlined"
+                  style="font-size: 25px; color: white"
+                >
+                  favorite
+                </span>
+                <span class="link-text"> liked songs </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="bottom-side-item">
+          <ul>
+            <li>
+              <a href="/" class="reset-anchor">
+                <span
+                  class="material-symbols-outlined"
+                  style="font-size: 25px; color: white"
+                >
+                  settings
+                </span>
+                <span class="link-text"> Settings </span>
+              </a>
+            </li>
+            <li>
+              <a href="/" class="reset-anchor">
+                <span
+                  class="material-symbols-outlined"
+                  style="font-size: 25px; color: white"
+                >
+                  logout
+                </span>
+                <span class="link-text"> logout </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <section>
+        <nav>
+          <div class="greeting-text">Good afternoon, Laila!</div>
+          <div class="action-icons">
+            <span class="material-symbols-outlined"> notifications </span>
+            <span class="profile">
+              <img src="../../public/pop-music.jpg" alt="profile" />
+            </span>
+          </div>
+        </nav>
+
+        <h1 id="curr-genre"></h1>
+
+        <div id="genre-song-cont">
+          <!-- <div class="genre-song-box">
+            <div class="song-title"></div>
+            <div class="song-artist"></div>
+          </div>
+          <div class="genre-song-box">
+            <div class="song-title"></div>
+            <div class="song-artist"></div>
+          </div>
+          <div class="genre-song-box">
+            <div class="song-title">Sanam re</div>
+            <div class="song-artist">Latish</div>
+          </div> -->
+        </div>
+
+        <div class="music-player">
+          <div class="audio-controls">
+            <div>
+              <div class="material-symbols-outlined">fast_rewind</div>
+              <div class="material-symbols-outlined">skip_previous</div>
+              <div class="material-symbols-outlined" id="play">play_arrow</div>
+              <div class="material-symbols-outlined">skip_next</div>
+              <div class="material-symbols-outlined">fast_forward</div>
+            </div>
+
+            <div class="progressBar">
+              <div class="myBar"></div>
+            </div>
+
+            <div class="duration">
+              <span id="c-time">00:00</span> /
+              <span id="t-duration">00:00</span>
+            </div>
+
+            <div class="material-symbols-outlined" id="volume-up">
+              volume_up
+            </div>
+            
+          </div>
+        </div>
+        <audio src="" controls></audio>
+      </section>
+    </div>
+    <script type="module" src="./genre-song.js"></script>
+    <!-- <script type="module" src="./practice.js"></script> -->
+  </body>
+</html>

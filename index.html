@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vanilla Music</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./css/utility.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <h1>AudioX</h1>
+        <p>Listen to free music from your favourite artist.</p>
+        <button>
+          <a href="./pages/auth/sign.html" class="reset-anchor">
+           Get started
+          </a>
+        </button>
+
+        <a href="./pages/auth/login.html" class="reset-anchor">
+          i already have an account
+        </a>
+      </div>
+    </div>
+
+    <script>
+      const btn = document.querySelector("button");
+      btn.addEventListener("click", function(){
+          this.children[0].click();
+      });
+    </script>
+  </body>
+</html>

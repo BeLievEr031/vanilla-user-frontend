@@ -1,0 +1,10 @@
+const PROJECT_ID = "658a5f3544cda48afc75"
+const DATABASE_ID = "658a5fbcd28191080bdb"
+const GENRE_COLLECTION_ID = "658bf2e3a5fb5fcef2e4"
+const ARTIST_COLLECTION_ID = "658d0a6dd9694e24ea98"
+const SONG_COLLECTION_ID = "658fe43614555f4be886"
+const BUCKET_ID = "658fdba08c6ae0c62224"
+
+export { PROJECT_ID, BUCKET_ID, DATABASE_ID, GENRE_COLLECTION_ID, ARTIST_COLLECTION_ID, SONG_COLLECTION_ID };
+
+// https://preview.uiuxassets.com/opalin/index.html

@@ -1,0 +1,122 @@
+#curr-genre {
+  text-transform: capitalize;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+}
+
+#genre-song-cont {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  flex-grow: 1;
+  padding: 20px 10px;
+  justify-content: space-evenly;
+}
+
+.genre-song-box {
+  width: 300px;
+  height: 200px;
+  border-radius: 10px;
+  background-color: lightblue;
+  cursor: pointer;
+  background-image: url("../../public/pop-music.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: end;
+  align-items: start;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.genre-song-box::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: rgba(20, 20, 20, 0.32);
+}
+
+.genre-song-box > div {
+  position: relative;
+  z-index: 99;
+}
+
+.song-title {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.song-artist {
+  font-size: 20px;
+}
+
+.music-player {
+  width: 100%;
+  border: 1px solid white;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  padding: 0 5px;
+  gap: 5px;
+  height: 50px;
+}
+
+.music-player .audio-controls {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  gap: 10px;
+  align-items: center;
+}
+
+.audio-controls .material-symbols-outlined {
+  font-size: 32px;
+  cursor: pointer;
+}
+
+#preview-container {
+  position: absolute;
+  transform: translateX(-1000%);
+}
+
+.progressBar {
+  width: 50%;
+  background-color: gray;
+  margin-left: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.myBar {
+  width: 0%;
+  background-color: lightgreen;
+  height: 100%;
+}
+
+#volume-up {
+  margin-left: auto;
+}
+
+.duration {
+  font-size: 18px;
+  padding: 5px;
+}
+
+audio{
+  position: absolute;
+  left: -200%;
+}
