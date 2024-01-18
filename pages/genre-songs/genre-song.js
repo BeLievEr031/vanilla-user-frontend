@@ -58,7 +58,6 @@ let songArr = [];
 
 
 const fetchSongByGenreName = () => {
-    console.log(songArr);
     songArr.forEach((element, idx) => {
         const songBox = document.createElement("div");
         songBox.classList.add("genre-song-box")
@@ -106,9 +105,7 @@ async function handlePlayAndPause(index, isEnded = null) {
     } else {
 
         if (index >= 0 && prevSong !== index) {
-            // audioElement.src = songArr[index].src
             audioElement.src = storage.getFileDownload(BUCKET_ID, songArr[index].songid)
-
         }
 
         await audioElement.play()

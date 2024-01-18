@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
-    <link rel="stylesheet" href="./home.css" />
+    <title>Genre View All</title>
+    <link rel="stylesheet" href="../home/home.css">
     <link rel="stylesheet" href="../../css/utility.css" />
     <link
       rel="stylesheet"
@@ -15,6 +15,30 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,100,1,200"
       rel="stylesheet"
     />
+
+    <style>
+        .pagination{
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            color: white;
+        }
+        .pagination button {
+            padding: 5px 15px;
+            font-size: 18px;
+            background-color: transparent;
+            color: white;
+            border-radius: 5px;
+            border: 2px solid gray;
+            outline: none;
+            cursor: pointer;
+        }
+
+        .pagination span{
+            font-size: 18px;
+            margin: 0 5px;
+        }
+    </style>
   </head>
   <body>
     <div class="parent-cont">
@@ -96,36 +120,18 @@
           </div>
         </nav>
 
-        <div id="history">
-          <div class="history-heading-text">
-            Pick up Where you left off
-            <a href="../genre-view-all/genre-view-all.html" class="view-all reset-anchor">View All</a>
-          </div>
-          <div class="history-box">
+        <h1>All Genre</h1>
+        <div class="history-box">
             
-          </div>
-        </div>
-
-        <div id="genre-box">
-          <div class="genre-heading-text">
-            For you
-            <button class="view-all">View All</button>
-          </div>
-          <div class="genre-card-box">
-            <div class="genre-card"></div>
-            <div class="genre-card"></div>
-            <div class="genre-card"></div>
-          </div>
-        </div>
-
-        <div id="popular-songs">
-          <div class="popular-heading-text">Popular songs</div>
-          <div class="popular-song-box"></div>
         </div>
       </section>
-    </div>
 
-    <audio src="" controls></audio>
-    <script type="module" src="./home.js"></script>
+      <div class="pagination">
+        <button>Prev</button>
+        <span>1</span>
+        <button>Next</button>
+      </div>
+    </div>
+    <script type="module" src="./genre-view-all.js"></script>
   </body>
 </html>
